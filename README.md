@@ -1,4 +1,5 @@
-This is a facebook style site, do the perform functionalities
+This is a facebook style site, which performs the following functionalities
+
 1) Register user
 2) Login as user
 3) Post  a comment
