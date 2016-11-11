@@ -430,7 +430,6 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
-    <Content Include="Images\ProfileImages\1.png" />
     <Content Include="Images\ProfileImages\2.png" />
     <Content Include="Images\ProfileImages\3.png" />
     <Content Include="Images\ProfileImages\4.png" />
@@ -438,6 +437,7 @@
     <Content Include="Images\ProfileImages\6.png" />
     <Content Include="Images\ProfileImages\7.png" />
     <Content Include="Images\ProfileImages\user.png" />
+    <Content Include="Images\ReadMe.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
