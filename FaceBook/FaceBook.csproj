@@ -449,6 +449,7 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\app\Controller.js" />
+    <Content Include="Scripts\app\Directives.js" />
     <Content Include="Scripts\app\Module.js" />
     <Content Include="Scripts\app\Service.js" />
     <Content Include="Scripts\bootstrap.js" />

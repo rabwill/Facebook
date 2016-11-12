@@ -5,7 +5,8 @@
 <div data-ng-app="appModule">
     <div data-ng-controller="appController">
         <div class="publishContainer">
-            <textarea class="msgTextArea" id="txtMessage" ng-model="newMessage" style="height:3em;" placeholder="Go ahead and post it...."></textarea>
+            <textarea class="msgTextArea" id="txtMessage"  no-special-char   ng-model="newMessage" style="height:3em;" placeholder="Go ahead and post it...."></textarea>
+            <span class="errormsg"></span>
             <input type="button" value="Share" id="btnShare" ng-click="savePostInWall()">
         </div>
         <div ng-show="IsLoaded">
@@ -23,7 +24,8 @@
                                 </li>
                             </ul>
                             <div style="display: block" class="publishComment">
-                                <textarea class="commentTextArea" ng-model="newCommentMessage" placeholder="Go ahead and comment on this post...."></textarea>
+                                <textarea class="commentTextArea" no-special-char ng-model="newCommentMessage" placeholder="Go ahead and comment on this post...."></textarea>
+                                <span class="errormsg"></span>
                                 <input type="button" value="Comment" class="btnComment" ng-click="addComment(newCommentMessage,post.PostId)" />
                             </div>
                         </div>
@@ -39,11 +41,13 @@
 
 <!-- Load all the scripts for your angular and your jquery-->
 @section scripts{   
-   
+ 
     <script src="~/Scripts/jquery.timeago.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="~/Scripts/app/Module.js"></script>
     <script src="~/Scripts/app/Service.js"></script>
     <script src="~/Scripts/app/Controller.js"></script>
+   <script src="~/Scripts/app/Directives.js"></script>
+ 
 
 }
