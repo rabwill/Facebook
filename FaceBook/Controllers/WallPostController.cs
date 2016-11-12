@@ -17,7 +17,7 @@ namespace FaceBook.Controllers
         /// <summary>
         /// Declare variable needed
         /// </summary>
-        private string imgFolder = "http://localhost:55880/Images/profileimages/";
+        private string imgFolder = "~/Images/profileimages/";
         private string defaultAvatar = "user.png";
         /// <summary>
         /// The connection to the DB

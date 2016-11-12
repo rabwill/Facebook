@@ -2,7 +2,7 @@
 
 app.controller('appController', ['$scope', 'wallService', function ($scope, wallService) {
 
-
+    $scope.IsLoaded = false;
     /* Rabia:  call service to get all the posts */
 
     wallService.getPosts($scope);

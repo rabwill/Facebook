@@ -1,6 +1,6 @@
 ﻿/* Rabia: ng service consumed by our controller */
 
-var postApiUrl = 'http://localhost:55880/api/WallPost/', commentApiUrl = 'http://localhost:55880/api/Comment/';
+var postApiUrl = 'api/WallPost/', commentApiUrl = 'api/Comment/';
 
 
 app.service('wallService', ['$http', function ($http) {
@@ -23,7 +23,7 @@ app.service('wallService', ['$http', function ($http) {
         });;
     };
 
-    /* Rabia: function to get all post using webapi url */
+    /* Rabia: function to save a post using webapi url */
 
     this.savePosts = function (pos) {
         return $http(
