@@ -10,31 +10,32 @@
             <input type="button" value="Share" id="btnShare" ng-click="savePostInWall()">
         </div>
         <div ng-show="IsLoaded">
-            <ul id="msgHolder" ng-repeat="post in posts">
-                <li class="postHolder">
-                    <img data-ng-src="{{post.PostedByAvatar}}"><p><a>{{post.PostedByName}}</a>: <span>{{post.Message}}</span></p>
-                    <div class="postFooter">
-                        <span class="timeago">{{post.PostedDate}}</span>&nbsp;<a class="linkComment" href="#" ng-click="toggleComment(post,$event)">Comment</a>
+            <div ng-cloak>
+                <ul id="msgHolder" ng-repeat="post in posts">
+                    <li class="postHolder">
+                        <img data-ng-src="{{post.PostedByAvatar}}"><p><a>{{post.PostedByName}}</a>: <span>{{post.Message}}</span></p>
+                        <div class="postFooter">
+                            <span class="timeago">{{post.PostedDate}}</span>&nbsp;<a class="linkComment" href="#" ng-click="toggleComment(post,$event)">Comment</a>
 
-                        <div class="commentSection">
-                            <ul ng-repeat="postc in post.PostComments">
-                                <li class="commentHolder">
-                                    <img data-ng-src="{{postc.CommentedByAvatar}}"><p><a>{{postc.CommentedByName}}</a>: <span>{{postc.Message}}</span></p>
-                                    <div class="commentFooter"> <span class="timeago">{{postc.CommentedDate}}</span>&nbsp;</div>
-                                </li>
-                            </ul>
-                            <div style="display: block" class="publishComment">
-                                <textarea class="commentTextArea" no-special-char ng-model="newCommentMessage" placeholder="Go ahead and comment on this post...."></textarea>
-                                <span class="errormsg"></span>
-                                <input type="button" value="Comment" class="btnComment" ng-click="addComment(newCommentMessage,post.PostId)" />
+                            <div class="commentSection">
+                                <ul ng-repeat="postc in post.PostComments">
+                                    <li class="commentHolder">
+                                        <img data-ng-src="{{postc.CommentedByAvatar}}"><p><a>{{postc.CommentedByName}}</a>: <span>{{postc.Message}}</span></p>
+                                        <div class="commentFooter"> <span class="timeago">{{postc.CommentedDate}}</span>&nbsp;</div>
+                                    </li>
+                                </ul>
+                                <div style="display: block" class="publishComment">
+                                    <textarea class="commentTextArea" no-special-char ng-model="newCommentMessage" placeholder="Go ahead and comment on this post...."></textarea>
+                                    <span class="errormsg"></span>
+                                    <input type="button" value="Comment" class="btnComment" ng-click="addComment(newCommentMessage,post.PostId)" />
+                                </div>
                             </div>
+
+
                         </div>
-
-
-                    </div>
-                </li>
-            </ul>
-
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

@@ -1083,3 +1083,6 @@ aside
 }
 
 .fbbutton  { border:1px solid #1D3871; width:94px; background-image:-webkit-linear-gradient(top, #637BAD, #4F67A4); font-size:12px; line-height:25px; font-weight:normal; color:#fff; }
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
